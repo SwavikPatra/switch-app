@@ -142,7 +142,7 @@ export default function App() {
   const { progress, toggleComplete, toggleStar, reset } = useProgress();
 
   useEffect(() => {
-    fetch('/interview-questions.md')
+    fetch(`${import.meta.env.BASE_URL}interview-questions.md`)
       .then(r => r.text())
       .then(text => {
         const parsed = parseQuestions(text);
