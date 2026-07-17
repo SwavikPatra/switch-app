@@ -47,28 +47,32 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .questions-list::-webkit-scrollbar { width: 6px; }
 .questions-list::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
 
-.question-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px 20px; margin-bottom: 10px; }
-.question-card.done { opacity: 0.6; border-color: #1f6feb44; }
+.question-card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 24px 28px; margin-bottom: 14px; }
+.question-card.done { opacity: 0.65; border-color: #1f6feb44; }
 .question-card.starred { border-color: #d2992244; }
 .question-card.done.starred { border-color: #d2992244; }
 
-.q-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
-.q-meta { display: flex; align-items: center; gap: 8px; }
-.q-section { font-size: 0.7rem; color: #d29922; font-weight: 600; background: #d2992222; padding: 2px 8px; border-radius: 4px; }
-.q-num { font-size: 0.75rem; color: #58a6ff; font-weight: 600; background: #1f6feb22; padding: 2px 8px; border-radius: 4px; }
-.q-actions { display: flex; gap: 6px; }
-.star-btn, .done-btn { background: none; border: 1px solid #30363d; border-radius: 4px; padding: 4px 8px; cursor: pointer; font-size: 0.9rem; line-height: 1; transition: all 0.15s; }
-.done-btn { color: #8b949e; }
-.done-btn.active { color: #58a6ff; border-color: #58a6ff; background: #1f6feb22; }
-.star-btn { color: #8b949e; }
+.q-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+.q-meta { display: flex; align-items: center; gap: 10px; }
+.q-section { font-size: 0.8rem; color: #d29922; font-weight: 600; background: #d2992222; padding: 3px 12px; border-radius: 5px; }
+.q-num { font-size: 0.85rem; color: #58a6ff; font-weight: 600; background: #1f6feb22; padding: 3px 12px; border-radius: 5px; }
+.q-actions { display: flex; gap: 8px; align-items: center; }
+.done-btn { display: flex; align-items: center; gap: 6px; background: none; border: 1.5px solid #30363d; border-radius: 6px; padding: 7px 14px; cursor: pointer; font-size: 0.85rem; line-height: 1; transition: all 0.2s; color: #8b949e; font-weight: 500; }
+.done-btn:hover { border-color: #58a6ff; color: #58a6ff; background: #1f6feb11; }
+.done-btn.active { color: #fff; border-color: #238636; background: #23863622; }
+.done-btn.active .done-icon { color: #3fb950; }
+.done-icon { font-size: 1rem; }
+.done-label { white-space: nowrap; }
+.star-btn { background: none; border: 1.5px solid #30363d; border-radius: 6px; padding: 7px 10px; cursor: pointer; font-size: 1.1rem; line-height: 1; transition: all 0.2s; color: #8b949e; }
+.star-btn:hover { border-color: #d29922; color: #d29922; }
 .star-btn.active { color: #d29922; border-color: #d29922; background: #d2992222; }
 
-.q-text { font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px; }
+.q-text { font-size: 1.1rem; line-height: 1.6; margin-bottom: 14px; }
 
-.reveal-btn { padding: 6px 14px; background: #21262d; border: 1px solid #30363d; border-radius: 6px; color: #e1e4e8; cursor: pointer; font-size: 0.8rem; }
+.reveal-btn { padding: 8px 18px; background: #21262d; border: 1px solid #30363d; border-radius: 6px; color: #e1e4e8; cursor: pointer; font-size: 0.85rem; font-weight: 500; transition: all 0.15s; }
 .reveal-btn:hover { background: #30363d; }
 
-.q-answer { margin-top: 12px; padding: 12px; background: #0d1117; border-radius: 6px; font-size: 0.85rem; line-height: 1.6; color: #8b949e; white-space: pre-wrap; }
+.q-answer { margin-top: 14px; padding: 16px; background: #0d1117; border-radius: 8px; font-size: 0.95rem; line-height: 1.7; color: #c9d1d9; white-space: pre-wrap; border: 1px solid #21262d; }
 
 .empty-state { text-align: center; padding: 60px 20px; }
 .empty-state h2 { color: #58a6ff; margin-bottom: 8px; }

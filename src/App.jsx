@@ -29,11 +29,12 @@ function QuestionCard({ question, completed, starred, onToggle, onStar }) {
           <span className="q-num">Q{question.number}</span>
         </div>
         <div className="q-actions">
+          <button className={`done-btn ${isDone ? 'active' : ''}`} onClick={() => onToggle(question.id)}>
+            <span className="done-icon">{isDone ? '\u2714' : '\u25CB'}</span>
+            <span className="done-label">{isDone ? 'Completed' : 'Mark Complete'}</span>
+          </button>
           <button className={`star-btn ${isStarred ? 'active' : ''}`} onClick={() => onStar(question.id)} title="Star">
             {isStarred ? '\u2605' : '\u2606'}
-          </button>
-          <button className={`done-btn ${isDone ? 'active' : ''}`} onClick={() => onToggle(question.id)} title="Mark complete">
-            {isDone ? '\u2713' : '\u25CB'}
           </button>
         </div>
       </div>
