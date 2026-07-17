@@ -136,10 +136,76 @@ function SectionView({ sections, currentSectionId, completed, starred, onToggle,
   );
 }
 
+function ProgressModal({ sections, completed, starred, onToggle, onClose }) {
+  const [expandedSection, setExpandedSection] = useState(null);
+  const total = sections.reduce((s, sec) => s + sec.questions.length, 0);
+  const done = sections.reduce((s, sec) => s + sec.questions.filter(q => completed[q.id]).length, 0);
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={e => e.stopPropagation()}>
+        <div className="modal-header">
+          <h2>Progress Overview</h2>
+          <button className="modal-close" onClick={onClose}>&times;</button>
+        </div>
+        <div className="modal-body">
+          <div className="modal-stats">
+            <span className="modal-stats-num">{done}/{total} completed</span>
+            <span className="modal-stats-pct">{pct}%</span>
+          </div>
+          <div className="modal-progress-bar">
+            <div className="modal-progress-fill" style={{ width: `${pct}%` }} />
+          </div>
+          <div className="modal-sections">
+            {sections.map(sec => {
+              const stats = getSectionStats(sec, completed, starred);
+              const isExpanded = expandedSection === sec.id;
+              return (
+                <div key={sec.id} className="modal-section">
+                  <div className="modal-section-header" onClick={() => setExpandedSection(isExpanded ? null : sec.id)}>
+                    <div className="modal-section-info">
+                      <span className="modal-section-name">{sec.name}</span>
+                      <span className="modal-section-stats">{stats.done}/{stats.total}</span>
+                    </div>
+                    <div className="modal-section-progress">
+                      <div className="modal-section-bar">
+                        <div className="modal-section-fill" style={{ width: `${(stats.done / stats.total) * 100}%` }} />
+                      </div>
+                    </div>
+                    <span className="modal-expand-icon">{isExpanded ? '\u25BC' : '\u25B6'}</span>
+                  </div>
+                  {isExpanded && (
+                    <div className="modal-section-questions">
+                      {sec.questions.map(q => (
+                        <div key={q.id} className={`modal-question ${completed[q.id] ? 'done' : ''}`}>
+                          <span className="modal-q-num">Q{q.number}</span>
+                          <span className="modal-q-text">{q.question}</span>
+                          <button
+                            className={`modal-toggle-btn ${completed[q.id] ? 'active' : ''}`}
+                            onClick={() => onToggle(q.id)}
+                          >
+                            {completed[q.id] ? '\u2714' : '\u25CB'}
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   const [sections, setSections] = useState([]);
   const [currentSectionId, setCurrentSectionId] = useState(null);
   const [view, setView] = useState('random');
+  const [showProgress, setShowProgress] = useState(false);
   const { progress, toggleComplete, toggleStar, reset } = useProgress();
 
   useEffect(() => {
@@ -155,6 +221,8 @@ export default function App() {
   window.__resetProgress = reset;
 
   const allQuestions = useMemo(() => sections.flatMap(s => s.questions), [sections]);
+  const totalAll = sections.reduce((s, sec) => s + sec.questions.length, 0);
+  const doneAll = sections.reduce((s, sec) => s + sec.questions.filter(q => progress.completed[q.id]).length, 0);
 
   if (sections.length === 0) {
     return <div className="loading">Loading questions...</div>;
@@ -164,6 +232,15 @@ export default function App() {
     <div className="app">
       <SectionSidebar sections={sections} currentSectionId={currentSectionId} onSelect={setCurrentSectionId} completed={progress.completed} starred={progress.starred} />
       <div className="main-area">
+        <div className="progress-banner" onClick={() => setShowProgress(true)}>
+          <div className="progress-banner-text">
+            Progress: {doneAll}/{totalAll} completed
+          </div>
+          <div className="progress-banner-bar">
+            <div className="progress-banner-fill" style={{ width: `${totalAll > 0 ? (doneAll / totalAll) * 100 : 0}%` }} />
+          </div>
+          <span className="progress-banner-cta">View Details \u2192</span>
+        </div>
         <div className="view-tabs">
           <button className={`tab ${view === 'random' ? 'active' : ''}`} onClick={() => setView('random')}>
             Random Question
@@ -180,6 +257,9 @@ export default function App() {
           <SectionView sections={sections} currentSectionId={currentSectionId} completed={progress.completed} starred={progress.starred} onToggle={toggleComplete} onStar={toggleStar} />
         )}
       </div>
+      {showProgress && (
+        <ProgressModal sections={sections} completed={progress.completed} starred={progress.starred} onToggle={toggleComplete} onClose={() => setShowProgress(false)} />
+      )}
     </div>
   );
 }
