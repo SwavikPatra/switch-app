@@ -1570,6 +1570,498 @@
 80. **What is meet-in-the-middle? When is it used?**
     - Splits problem into two halves, solves each, combines results. Reduces exponential complexity from O(2ⁿ) to O(2ⁿᐟ²). Used in subset sum, knapsack, cryptanalysis.
 
+### 9.8 Striver's A2Z DSA Sheet
+
+#### Arrays - Easy
+81. **Largest Element** [Medium]
+    -
+82. **Second Largest Element** [Medium]
+    -
+83. **Check if the Array is Sorted II** [Medium]
+    - https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
+84. **Remove duplicates from Sorted array** [Medium]
+    - https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+85. **Left Rotate Array by One** [Medium]
+    - https://leetcode.com/problems/rotate-array/
+86. **Left Rotate Array by K Places** [Medium]
+    - https://leetcode.com/problems/rotate-array/
+87. **Move Zeros to End** [Medium]
+    - https://leetcode.com/problems/move-zeroes/
+88. **Linear Search** [Medium]
+    -
+89. **Union of two sorted arrays** [Medium]
+    -
+90. **Find missing number** [Medium]
+    -
+91. **Maximum Consecutive Ones** [Medium]
+    - https://leetcode.com/problems/max-consecutive-ones/
+92. **Find the number that appears once, and other numbers twice.** [Medium]
+    - https://leetcode.com/problems/single-number/
+93. **Longest subarray with given sum K(positives)** [Medium]
+    -
+94. **Longest subarray with sum K** [Medium]
+    -
+
+#### Arrays - Medium
+95. **Two Sum** [Medium]
+    - https://leetcode.com/problems/two-sum/
+96. **Sort an array of 0's 1's and 2's** [Medium]
+    - https://leetcode.com/problems/sort-colors/
+97. **Majority Element-I** [Medium]
+    - https://leetcode.com/problems/majority-element/
+98. **Kadane's Algorithm, maximum subarray sum** [Medium]
+    - https://leetcode.com/problems/maximum-subarray/
+99. **Print subarray with maximum subarray sum (extended version of above problem)** [Medium]
+    -
+100. **Stock Buy and Sell** [Medium]
+    - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+101. **Rearrange array elements by sign** [Medium]
+    - https://leetcode.com/problems/rearrange-array-elements-by-sign/
+102. **Next Permutation** [Medium]
+    - https://leetcode.com/problems/next-permutation/
+103. **Leaders in an Array** [Medium]
+    -
+104. **Longest Consecutive Sequence in an Array** [Medium]
+    - https://leetcode.com/problems/longest-consecutive-sequence/solution/
+105. **Set Matrix Zeroes** [Medium]
+    - https://leetcode.com/problems/set-matrix-zeroes/
+106. **Rotate matrix by 90 degrees** [Medium]
+    - https://leetcode.com/problems/rotate-image/
+107. **Print the matrix in spiral manner** [Medium]
+    - https://leetcode.com/problems/spiral-matrix/
+108. **Count subarrays with given sum** [Medium]
+    - https://leetcode.com/problems/subarray-sum-equals-k/
+
+#### Arrays - Hard
+109. **Pascal's Triangle I** [Medium]
+    - https://leetcode.com/problems/pascals-triangle/
+110. **Majority Element-II** [Medium]
+    - https://leetcode.com/problems/majority-element-ii/
+111. **3 Sum** [Medium]
+    - https://leetcode.com/problems/3sum/
+112. **4 Sum** [Medium]
+    - https://leetcode.com/problems/4sum/
+113. **Largest Subarray with Sum 0** [Medium]
+    -
+114. **Count subarrays with given xor K** [Medium]
+    -
+115. **Merge Overlapping Subintervals** [Medium]
+    - https://leetcode.com/problems/merge-intervals/
+116. **Merge two sorted arrays without extra space** [Medium]
+    - https://leetcode.com/problems/merge-sorted-array/
+117. **Find the repeating and missing number** [Medium]
+    -
+118. **Count Inversions** [Medium]
+    -
+119. **Reverse Pairs** [Medium]
+    - https://leetcode.com/problems/reverse-pairs/
+120. **Maximum Product Subarray in an Array** [Medium]
+    - https://leetcode.com/problems/maximum-product-subarray/
+
+#### Binary Search - BS on 1D Arrays
+121. **Search X in sorted array** [Medium]
+    - https://leetcode.com/problems/binary-search/
+122. **Lower Bound** [Medium]
+    -
+123. **Upper Bound** [Medium]
+    -
+124. **Search insert position** [Medium]
+    - https://leetcode.com/problems/search-insert-position/
+125. **Floor and Ceil in Sorted Array** [Medium]
+    -
+126. **First and last occurrence** [Medium]
+    - https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+127. **Count Occurrences in a Sorted Array** [Medium]
+    -
+128. **Search in rotated sorted array-I** [Medium]
+    - https://leetcode.com/problems/search-in-rotated-sorted-array/
+129. **Search in rotated sorted array-II** [Medium]
+    - https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+130. **Find minimum in Rotated Sorted Array** [Medium]
+    - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+131. **Find out how many times the array is rotated** [Medium]
+    -
+132. **Single element in a Sorted Array** [Medium]
+    - https://leetcode.com/problems/single-element-in-a-sorted-array/
+133. **Find peak element** [Medium]
+    - https://leetcode.com/problems/find-peak-element/
+
+#### Binary Search - BS on 2D Arrays
+134. **Find row with maximum 1's** [Medium]
+    -
+135. **Search in a 2D matrix** [Medium]
+    - https://leetcode.com/problems/search-a-2d-matrix/
+136. **Search in 2D matrix - II** [Medium]
+    - https://leetcode.com/problems/search-a-2d-matrix-ii/
+137. **Find Peak Element - II** [Medium]
+    - https://leetcode.com/problems/find-a-peak-element-ii/
+138. **Matrix Median** [Medium]
+    -
+
+#### Binary Search - BS on Answers
+139. **Find square root of a number** [Medium]
+    -
+140. **Find Nth root of a number** [Medium]
+    -
+141. **Koko eating bananas** [Medium]
+    - https://leetcode.com/problems/koko-eating-bananas/
+142. **Minimum days to make M bouquets** [Medium]
+    - https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/
+143. **Find the smallest divisor** [Medium]
+    - https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
+144. **Capacity to Ship Packages Within D Days** [Medium]
+    - https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+145. **Kth Missing Positive Number** [Medium]
+    - https://leetcode.com/problems/kth-missing-positive-number/
+146. **Aggressive Cows** [Medium]
+    -
+147. **Book Allocation Problem** [Medium]
+    -
+148. **Split array - largest sum** [Medium]
+    - https://leetcode.com/problems/split-array-largest-sum/
+149. **Painter's Partition** [Medium]
+    -
+150. **Minimize Max Distance to Gas Station** [Medium]
+    - https://leetcode.com/problems/minimize-max-distance-to-gas-station/
+151. **Median of 2 sorted arrays** [Medium]
+    - https://leetcode.com/problems/median-of-two-sorted-arrays/
+152. **Kth element of 2 sorted arrays** [Medium]
+    -
+
+#### Strings - Basic and Easy String Problems
+153. **Remove Outermost Parentheses** [Medium]
+    - https://leetcode.com/problems/remove-outermost-parentheses/
+154. **Reverse words in a given string / Palindrome Check** [Medium]
+    - https://leetcode.com/problems/reverse-words-in-a-string/
+155. **Largest Odd Number in a String** [Medium]
+    - https://leetcode.com/problems/largest-odd-number-in-string/
+156. **Longest Common Prefix** [Medium]
+    - https://leetcode.com/problems/longest-common-prefix/
+157. **Isomorphic String** [Medium]
+    - https://leetcode.com/problems/isomorphic-strings/
+158. **Rotate String** [Medium]
+    - https://leetcode.com/problems/rotate-string/
+159. **Check if two strings are anagram of each other** [Medium]
+    - https://leetcode.com/problems/valid-anagram/
+
+#### Strings - Medium String Problems
+160. **Sort Characters by Frequency** [Medium]
+    - https://leetcode.com/problems/sort-characters-by-frequency/
+161. **Maximum Nesting Depth of the Parentheses** [Medium]
+    - https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/
+162. **Roman to Integer** [Medium]
+    - https://leetcode.com/problems/roman-to-integer/
+163. **String to Integer (atoi)** [Medium]
+    - https://leetcode.com/problems/string-to-integer-atoi/
+164. **Longest Palindromic Substring** [Medium]
+    - https://leetcode.com/problems/longest-palindromic-substring/
+165. **Sum of Beauty of All Substrings** [Medium]
+    - https://leetcode.com/problems/sum-of-beauty-of-all-substrings/
+166. **Reverse every word in a string** [Medium]
+    - https://leetcode.com/problems/reverse-words-in-a-string/
+
+#### Linked List - Learn 1D LinkedList
+167. **Introduction to Singly LinkedList** [Medium]
+    -
+168. **Insertion at the head of Linked List** [Medium]
+    -
+169. **Deletion of the head of LL** [Medium]
+    - https://leetcode.com/problems/delete-node-in-a-linked-list/
+170. **Find the length of the Linked List** [Medium]
+    -
+171. **Search in Linked List** [Medium]
+    -
+
+#### Linked List - Learn Doubly LinkedList
+172. **Introduction to Doubly LL** [Medium]
+    -
+173. **Insert node before head in Doubly Linked List** [Medium]
+    -
+174. **Delete head of Doubly Linked List** [Medium]
+    -
+175. **Reverse a Doubly Linked List** [Medium]
+    -
+
+#### Linked List - Medium Problems of LL
+176. **Middle of a LinkedList [TortoiseHare Method]** [Medium]
+    - https://leetcode.com/problems/middle-of-the-linked-list/
+177. **Reverse a LinkedList [Iterative]** [Medium]
+    - https://leetcode.com/problems/reverse-linked-list/
+178. **Reverse a LL** [Medium]
+    - https://leetcode.com/problems/reverse-linked-list/
+179. **Detect a loop in LL** [Medium]
+    - https://leetcode.com/problems/linked-list-cycle/
+180. **Find the starting point in LL** [Medium]
+    - https://leetcode.com/problems/linked-list-cycle-ii/
+181. **Length of loop in LL** [Medium]
+    -
+182. **Check if LL is palindrome or not** [Medium]
+    - https://leetcode.com/problems/palindrome-linked-list/
+183. **Segregate odd and even nodes in Linked List** [Medium]
+    - https://leetcode.com/problems/odd-even-linked-list/
+184. **Remove Nth node from the back of the LL** [Medium]
+    - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+185. **Delete the middle node in LL** [Medium]
+    - https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
+186. **Sort LL** [Medium]
+    - https://leetcode.com/problems/sort-list/
+187. **Sort a Linked List of 0's 1's and 2's** [Medium]
+    -
+188. **Find the intersection point of Y LL** [Medium]
+    - https://leetcode.com/problems/intersection-of-two-linked-lists/
+189. **Add one to a number represented by LL** [Medium]
+    -
+190. **Add two numbers in Linked List** [Medium]
+    - https://leetcode.com/problems/add-two-numbers/
+
+#### Linked List - Medium Problems of DLL
+191. **Delete all occurrences of a key in DLL** [Medium]
+    -
+192. **Find Pairs with Given Sum in Doubly Linked List** [Medium]
+    -
+193. **Remove duplicated from sorted DLL** [Medium]
+    -
+
+#### Linked List - Hard Problems of LL
+194. **Reverse LL in group of given size K** [Medium]
+    - https://leetcode.com/problems/reverse-nodes-in-k-group/
+195. **Rotate a LL** [Medium]
+    - https://leetcode.com/problems/rotate-list/description/
+196. **Flattening of LL** [Medium]
+    -
+197. **Clone a LL with random and next pointer** [Medium]
+    - https://leetcode.com/problems/copy-list-with-random-pointer/
+
+#### Recursion - Learn Basic Recursion
+198. **Print 1 to N using Recursion** [Medium]
+    -
+199. **Print N to 1 using Recursion** [Medium]
+    -
+200. **Sum of First N Numbers** [Medium]
+    -
+201. **Factorial of a given number** [Medium]
+    -
+202. **Reverse an array** [Medium]
+    -
+203. **Check if String is Palindrome or Not** [Medium]
+    - https://leetcode.com/problems/valid-palindrome/
+204. **Fibonacci Number** [Medium]
+    - https://leetcode.com/problems/fibonacci-number/
+
+#### Recursion - Get a Strong Hold
+205. **Recursive Implementation of atoi()** [Medium]
+    - https://leetcode.com/problems/string-to-integer-atoi/
+206. **Pow(x, n)** [Medium]
+    - https://leetcode.com/problems/powx-n/
+207. **Count Good Numbers** [Medium]
+    - https://leetcode.com/problems/count-good-numbers/
+208. **Sort a stack using recursion** [Medium]
+    -
+209. **Reverse a Stack** [Medium]
+    -
+
+#### Recursion - Subsequences Pattern
+210. **Generate Binary Strings Without Consecutive 1s** [Medium]
+    -
+211. **Generate Parentheses** [Medium]
+    - https://leetcode.com/problems/generate-parentheses/
+212. **Power Set** [Medium]
+    -
+213. **Count all subsequences with sum K** [Medium]
+    -
+214. **Check if there exists a subsequence with sum K** [Medium]
+    -
+215. **Combination Sum** [Medium]
+    - https://leetcode.com/problems/combination-sum/
+216. **Combination Sum II** [Medium]
+    - https://leetcode.com/problems/combination-sum-ii/
+217. **Subsets I** [Medium]
+    -
+218. **Subsets II** [Medium]
+    - https://leetcode.com/problems/subsets-ii/
+219. **Combination Sum III** [Medium]
+    - https://leetcode.com/problems/combination-sum-iii/
+220. **Letter Combinations of a Phone Number** [Medium]
+    - https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
+#### Recursion - Trying out all Combos / Hard
+221. **Palindrome partitioning** [Medium]
+    -
+222. **Word Search** [Medium]
+    - https://leetcode.com/problems/word-search/
+223. **N Queen** [Medium]
+    - https://leetcode.com/problems/n-queens/
+224. **Rat in a Maze** [Medium]
+    -
+225. **Word Break** [Medium]
+    -
+226. **M Coloring Problem** [Medium]
+    -
+227. **Sudoku Solver** [Medium]
+    - https://leetcode.com/problems/sudoku-solver/
+228. **Expression Add Operators** [Medium]
+    - https://leetcode.com/problems/expression-add-operators/
+
+#### Stack and Queue - Learning
+229. **Implement Stack using Arrays** [Medium]
+    -
+230. **Implement Queue using Arrays** [Medium]
+    -
+231. **Implement Stack using Queue** [Medium]
+    - https://leetcode.com/problems/implement-stack-using-queues/
+232. **Implement Queue using Stack** [Medium]
+    - https://leetcode.com/problems/implement-queue-using-stacks/
+233. **Implement stack using Linkedlist** [Medium]
+    -
+234. **Implement queue using Linkedlist** [Medium]
+    -
+235. **Balanced Paranthesis** [Medium]
+    - https://leetcode.com/problems/valid-parentheses/
+236. **Implement Min Stack** [Medium]
+    - https://leetcode.com/problems/min-stack/
+
+#### Stack and Queue - Prefix, Infix, PostFix Conversion Problems
+237. **Infix to Postfix Conversion** [Medium]
+    -
+238. **Prefix to Infix Conversion** [Medium]
+    -
+239. **Prefix to Postfix Conversion** [Medium]
+    -
+240. **Postfix to Prefix Conversion** [Medium]
+    -
+241. **Postfix to Infix Conversion** [Medium]
+    -
+242. **Infix to Prefix Conversion** [Medium]
+    -
+
+#### Stack and Queue - Monotonic Stack/Queue Problems [VVV. Imp]
+243. **Next Greater Element** [Medium]
+    - https://leetcode.com/problems/next-greater-element-i/
+244. **Next Greater Element - 2** [Medium]
+    - https://leetcode.com/problems/next-greater-element-ii/
+245. **Next Smaller Element** [Medium]
+    -
+246. **Number of Greater Elements to the Right** [Medium]
+    -
+247. **Trapping Rainwater** [Medium]
+    - https://leetcode.com/problems/trapping-rain-water/
+248. **Sum of Subarray Minimums** [Medium]
+    - https://leetcode.com/problems/sum-of-subarray-minimums/
+249. **Asteroid Collision** [Medium]
+    - https://leetcode.com/problems/asteroid-collision/
+250. **Sum of Subarray Ranges** [Medium]
+    - https://leetcode.com/problems/sum-of-subarray-ranges/
+251. **Remove K Digits** [Medium]
+    - https://leetcode.com/problems/remove-k-digits/
+252. **Largest rectangle in a histogram** [Medium]
+    - https://leetcode.com/problems/largest-rectangle-in-histogram/
+253. **Maximum Rectangles** [Medium]
+    - https://leetcode.com/problems/maximal-rectangle/
+
+#### Stack and Queue - Implementation Problems
+254. **Sliding Window Maximum** [Medium]
+    - https://leetcode.com/problems/sliding-window-maximum/
+255. **Stock span problem** [Medium]
+    - https://leetcode.com/problems/online-stock-span/
+256. **Celebrity Problem** [Medium]
+    - https://leetcode.com/accounts/login/?next=/problems/find-the-celebrity/
+257. **LRU Cache** [Medium]
+    -
+258. **LFU Cache** [Medium]
+    - https://leetcode.com/problems/lfu-cache/
+
+#### Sliding Window & Two Pointer
+259. **Longest Substring Without Repeating Characters** [Medium]
+    - https://leetcode.com/problems/longest-substring-without-repeating-characters/
+260. **Max Consecutive Ones III** [Medium]
+    - https://leetcode.com/problems/max-consecutive-ones-iii/
+261. **Fruit Into Baskets** [Medium]
+    -
+262. **Longest Repeating Character Replacement** [Medium]
+    - https://leetcode.com/problems/longest-repeating-character-replacement/
+263. **Binary Subarrays With Sum** [Medium]
+    - https://leetcode.com/problems/binary-subarrays-with-sum/
+264. **Count number of Nice subarrays** [Medium]
+    - https://leetcode.com/problems/count-number-of-nice-subarrays/
+265. **Number of Substrings Containing All Three Characters** [Medium]
+    - https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/
+266. **Maximum Points You Can Obtain from Cards** [Medium]
+    - https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
+
+#### Heaps - Basics
+267. **Heaps (Theory Video)** [Medium]
+    -
+268. **Implement Min Heap** [Medium]
+    -
+269. **Check if an array represents a min heap** [Medium]
+    -
+270. **Convert Min Heap to Max Heap** [Medium]
+    -
+
+#### Heaps - Medium
+271. **K-th Largest element in an array** [Medium]
+    -
+272. **Kth smallest element in an array [use priority queue]** [Medium]
+    -
+273. **Merge K sorted Lists** [Medium]
+    - https://leetcode.com/problems/merge-k-sorted-lists/
+274. **Replace Elements by Their Rank** [Medium]
+    -
+275. **Task Scheduler** [Medium]
+    - https://leetcode.com/problems/task-scheduler/
+276. **Hand of Straights** [Medium]
+    - https://leetcode.com/problems/hand-of-straights/
+
+#### Heaps - Hard
+277. **Design Twitter** [Medium]
+    - https://leetcode.com/problems/design-twitter/
+278. **Minimum Cost to Connect Sticks** [Medium]
+    -
+279. **Kth largest element in a stream of running integers** [Medium]
+    - https://leetcode.com/problems/kth-largest-element-in-a-stream/
+280. **Maximum Sum Combination** [Medium]
+    -
+281. **Find Median from Data Stream** [Medium]
+    - https://leetcode.com/problems/find-median-from-data-stream/
+282. **Top K Frequent Elements** [Medium]
+    - https://leetcode.com/problems/top-k-frequent-elements/
+
+#### Greedy Algorithm - Easy Problems
+283. **Assign Cookies** [Medium]
+    - https://leetcode.com/problems/assign-cookies/
+284. **Fractional Knapsack** [Medium]
+    -
+285. **Minimum coins** [Medium]
+    - https://leetcode.com/problems/coin-change/
+286. **Lemonade Change** [Medium]
+    - https://leetcode.com/problems/lemonade-change/
+287. **Valid Paranthesis Checker** [Medium]
+    - https://leetcode.com/problems/valid-parenthesis-string/
+
+#### Greedy Algorithm - Medium/Hard
+288. **N meetings in one room** [Medium]
+    -
+289. **Jump Game - I** [Medium]
+    - https://leetcode.com/problems/jump-game/
+290. **Jump Game II** [Medium]
+    - https://leetcode.com/problems/jump-game-ii/
+291. **Minimum number of platforms required for a railway** [Medium]
+    -
+292. **Job sequencing Problem** [Medium]
+    -
+293. **Candy** [Medium]
+    - https://leetcode.com/problems/candy/
+294. **Shortest Job First** [Medium]
+    -
+295. **Program for Least Recently Used (LRU) Page Replacement Algorithm** [Medium]
+    -
+296. **Insert Interval** [Medium]
+    - https://leetcode.com/problems/insert-interval/
+297. **Merge Intervals** [Medium]
+    - https://leetcode.com/problems/merge-intervals/
+298. **Non-overlapping Intervals** [Medium]
+    - https://leetcode.com/problems/non-overlapping-intervals/
+
 ---
 
 ## 10. Operating Systems & Concurrency
